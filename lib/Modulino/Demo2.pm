@@ -58,10 +58,10 @@ sub run {
 
 sub _test_run {
 	require Test::More;
-		
+
 	Test::More::pass();
 	Test::More::pass();
-	
+
 	SKIP: {
 		Test::More::skip( "These tests don't work", 2 );
 		Test::More::fail();
@@ -87,7 +87,7 @@ sub test {
 
 	my( $class ) = @_;
 	my @tests = $class->_get_tests;
-	
+
 	require Test::More;
 
 	foreach my $test ( @tests ) {
@@ -102,11 +102,11 @@ sub _get_tests {
 	my( $class ) = @_;
 	no strict 'refs';
 	my $stub = $class . '::';
-	my @tests = 
+	my @tests =
 		grep { defined &{"$stub$_"}    }
 		grep { 0 == index $_, '_test_' }
 		keys %{ "$stub" };
-	
+
 	say "Tests are @tests";
 	@tests;
 	}
@@ -116,7 +116,7 @@ sub _get_tests {
 =head2 Reading the docs
 
 =over 4
-	
+
 =item doc
 
 =cut
