@@ -1,8 +1,6 @@
 use ExtUtils::MakeMaker;
 
-require 5.012;
-
-eval "use Test::Manifest 1.21";
+require 5.014;
 
 WriteMakefile(
 	'NAME'	       => 'Modulino::Demo',
