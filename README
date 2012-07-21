@@ -13,12 +13,11 @@ the file, you can read it with perldoc.
 If you want to read it before you install it, you can use
 perldoc directly on the module file.
 
-	perldoc  lib/Demo.pm
+	perldoc  lib/Modulino/Demo.pm
 	
 This module is also in Github:
 
-	http://github.com/briandfoy/
-
+	https://github.com/briandfoy/modulino-demo
 
 Enjoy, 
 
