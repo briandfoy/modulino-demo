@@ -13,5 +13,15 @@ WriteMakefile(
 		'Test::More' => '0',
 		},
 
+	'META_MERGE' => {
+		resources => {
+			repository => 'https://github.com/briandfoy/modulino-demo',
+			},
+		no_index => {
+			dir       => [ qw(t) ],
+			directory => [ qw(t) ],
+			},
+		},
+
 	clean  => { FILES    => q|Modulino-Demo-*| },
 	);
