@@ -13,13 +13,23 @@ require Modulino::Base;
 
 =head1 NAME
 
-__PACKAGE__ - A demonstration of module ideas
+Modulino::TestWithBase - A demonstration of module ideas
 
 =head1 SYNOPSIS
 
 	use __PACKAGE__;
 
 =head1 DESCRIPTION
+
+I wrote this module as a demonstration of some ideas for I<Mastering
+Perl>'s modulino chapter. This module loads Modulino::Base to handle
+the modulino portions of the module.
+
+In particular, this modulino has a special test more. If C<CPANTEST>
+is a true value, it runs the module as a test file. That mode will 
+look for methods that start with C<_test_>.
+
+This also handles the normal "run as application" modulino idea if the
 
 =over 4
 
