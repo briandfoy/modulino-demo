@@ -1,4 +1,4 @@
-package Modulino::Demo2;
+package Modulino::Test;
 use strict;
 use utf8;
 
@@ -12,12 +12,8 @@ use vars qw($VERSION);
 $VERSION = '0.10_01';
 
 UNITCHECK {
-sub _running_under_docreader {
-	!! $ENV{PERLDOC}
-	}
-
 sub _running_under_tester {
-	!! $ENV{HARNESS_ACTIVE}
+	!! $ENV{CPANTEST}
 	}
 
 sub _running_as_app {
@@ -25,10 +21,9 @@ sub _running_as_app {
 	}
 
 my $method = do {
-	   if( _running_under_docreader() ) { 'doc'  } # reading docs
-	elsif( _running_under_tester()    ) { 'test' } # testing
+	   if( _running_under_tester()    ) { 'test' } # testing
 	elsif( _running_as_app()          ) { 'run'  } # running the application
-	else                                { undef  } #everything else
+	else                                { undef  } # everything else
 	};
 
 __PACKAGE__->$method(@ARGV) if defined $method;
@@ -38,11 +33,11 @@ __PACKAGE__->$method(@ARGV) if defined $method;
 
 =head1 NAME
 
-Modulino::Demo - A demonstration of modulino ideas
+__PACKAGE__ - A demonstration of module ideas
 
 =head1 SYNOPSIS
 
-	use Modulino::Demo;
+	use __PACKAGE__;
 
 =head1 DESCRIPTION
 
@@ -96,6 +91,8 @@ sub test {
 			Test::More::diag( $@ ) unless defined $rc;
 			} );
 		}
+	
+	Test::More::done_testing();
 	}
 
 sub _get_tests {
@@ -111,26 +108,7 @@ sub _get_tests {
 	@tests;
 	}
 
-=back
-
-=head2 Reading the docs
-
-=over 4
-
-=item doc
-
-=cut
-
-sub doc {
-	say "Running as docs";
-	require Pod::Perldoc;
-
-	*Pod::Perldoc::program_name = sub {
-		'perldoc'; 
-		};
-	
-	Pod::Perldoc->new( args => [ __FILE__ ] )->process();
-	}
+=pod
 
 sub _test_doc {
 	require Test::More;
@@ -165,7 +143,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2012-2013, brian d foy, All Rights Reserved.
+Copyright (c) 2013, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

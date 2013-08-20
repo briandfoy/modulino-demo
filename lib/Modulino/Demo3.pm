@@ -1,4 +1,4 @@
-package Modulino::Demo2;
+package Modulino::Demo3;
 use strict;
 use utf8;
 
@@ -9,30 +9,9 @@ use warnings;
 use subs qw();
 use vars qw($VERSION);
 
+require Modulino::Base;
+
 $VERSION = '0.10_01';
-
-UNITCHECK {
-sub _running_under_docreader {
-	!! $ENV{PERLDOC}
-	}
-
-sub _running_under_tester {
-	!! $ENV{HARNESS_ACTIVE}
-	}
-
-sub _running_as_app {
-	defined scalar caller
-	}
-
-my $method = do {
-	   if( _running_under_docreader() ) { 'doc'  } # reading docs
-	elsif( _running_under_tester()    ) { 'test' } # testing
-	elsif( _running_as_app()          ) { 'run'  } # running the application
-	else                                { undef  } #everything else
-	};
-
-__PACKAGE__->$method(@ARGV) if defined $method;
-}
 
 =encoding utf8
 

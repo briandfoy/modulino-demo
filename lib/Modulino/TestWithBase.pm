@@ -1,48 +1,23 @@
-package Modulino::Demo2;
-use strict;
+package Modulino::TestWithBase;
 use utf8;
-
-use v5.14.2;
-
+use strict;
 use warnings;
 
-use subs qw();
-use vars qw($VERSION);
+use v5.10.1;
 
-$VERSION = '0.10_01';
+our $VERSION = '0.10_01';
 
-UNITCHECK {
-sub _running_under_docreader {
-	!! $ENV{PERLDOC}
-	}
-
-sub _running_under_tester {
-	!! $ENV{HARNESS_ACTIVE}
-	}
-
-sub _running_as_app {
-	defined scalar caller
-	}
-
-my $method = do {
-	   if( _running_under_docreader() ) { 'doc'  } # reading docs
-	elsif( _running_under_tester()    ) { 'test' } # testing
-	elsif( _running_as_app()          ) { 'run'  } # running the application
-	else                                { undef  } #everything else
-	};
-
-__PACKAGE__->$method(@ARGV) if defined $method;
-}
+require Modulino::Base;
 
 =encoding utf8
 
 =head1 NAME
 
-Modulino::Demo - A demonstration of modulino ideas
+__PACKAGE__ - A demonstration of module ideas
 
 =head1 SYNOPSIS
 
-	use Modulino::Demo;
+	use __PACKAGE__;
 
 =head1 DESCRIPTION
 
@@ -96,6 +71,8 @@ sub test {
 			Test::More::diag( $@ ) unless defined $rc;
 			} );
 		}
+	
+	Test::More::done_testing();
 	}
 
 sub _get_tests {
@@ -110,42 +87,6 @@ sub _get_tests {
 	say "Tests are @tests";
 	@tests;
 	}
-
-=back
-
-=head2 Reading the docs
-
-=over 4
-
-=item doc
-
-=cut
-
-sub doc {
-	say "Running as docs";
-	require Pod::Perldoc;
-
-	*Pod::Perldoc::program_name = sub {
-		'perldoc'; 
-		};
-	
-	Pod::Perldoc->new( args => [ __FILE__ ] )->process();
-	}
-
-sub _test_doc {
-	require Test::More;
-	require Test::Pod;
-	require Test::Pod::Coverage;
-	our $TODO;
-
-	Test::Pod::pod_file_ok( __FILE__ );
-	TODO: {
-		local $TODO = "Pod::Coverage can't find the pod";
-		Test::Pod::Coverage::pod_coverage_ok( __PACKAGE__ );
-		}
-	}
-
-=back
 
 =head1 TO DO
 
@@ -165,7 +106,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2012-2013, brian d foy, All Rights Reserved.
+Copyright (c) 2013, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

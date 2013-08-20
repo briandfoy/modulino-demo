@@ -129,7 +129,8 @@ sub doc {
 		<>;
 		};
 
-	$data =~ s/.../.../;
+	my $package = __PACKAGE__;
+	$data =~ s/__PACKAGE__/$package/;
 
 	say $data;
 	}
@@ -167,7 +168,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2012, brian d foy, All Rights Reserved.
+Copyright (c) 2012-2013, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 
