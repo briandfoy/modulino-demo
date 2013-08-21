@@ -21,3 +21,5 @@ t/cover_db.*
 \.svnignore
 \.git
 Modulino-.*
+podman*
+.travis.yml
