@@ -26,7 +26,7 @@ Perl>'s modulino chapter. This module loads Modulino::Base to handle
 the modulino portions of the module.
 
 In particular, this modulino has a special test more. If C<CPANTEST>
-is a true value, it runs the module as a test file. That mode will 
+is a true value, it runs the module as a test file. That mode will
 look for methods that start with C<_test_>.
 
 This also handles the normal "run as application" modulino idea if the
@@ -65,38 +65,6 @@ sub _test_run {
 Run all of the subroutines that start with C<_test_>. Each subroutine
 is wrapped in a C<Test::More> subtest.
 
-=cut
-
-sub test {
-	say "Running as test";
-
-	my( $class ) = @_;
-	my @tests = $class->_get_tests;
-
-	require Test::More;
-
-	foreach my $test ( @tests ) {
-		Test::More::subtest( $test => sub {
-			my $rc = eval { $class->$test(); 1 };
-			Test::More::diag( $@ ) unless defined $rc;
-			} );
-		}
-	
-	Test::More::done_testing();
-	}
-
-sub _get_tests {
-	my( $class ) = @_;
-	no strict 'refs';
-	my $stub = $class . '::';
-	my @tests =
-		grep { defined &{"$stub$_"}    }
-		grep { 0 == index $_, '_test_' }
-		keys %{ "$stub" };
-
-	say "Tests are @tests";
-	@tests;
-	}
 
 =head1 TO DO
 
