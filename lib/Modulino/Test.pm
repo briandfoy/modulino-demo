@@ -91,7 +91,7 @@ sub test {
 			Test::More::diag( $@ ) unless defined $rc;
 			} );
 		}
-	
+
 	Test::More::done_testing();
 	}
 

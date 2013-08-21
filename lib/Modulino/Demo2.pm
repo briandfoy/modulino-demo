@@ -126,9 +126,9 @@ sub doc {
 	require Pod::Perldoc;
 
 	*Pod::Perldoc::program_name = sub {
-		'perldoc'; 
+		'perldoc';
 		};
-	
+
 	Pod::Perldoc->new( args => [ __FILE__ ] )->process();
 	}
 
