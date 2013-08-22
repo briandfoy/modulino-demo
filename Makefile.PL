@@ -10,7 +10,9 @@ WriteMakefile(
 	'AUTHOR'       => 'brian d foy <bdfoy@cpan.org>',
 	
 	'PREREQ_PM'    => { 
-		'Test::More' => '0',
+		'Test::More'          => '0',
+		'Test::Pod'           => '0',
+		'Test::Pod::Coverage' => '0',
 		},
 
 	'META_MERGE' => {

@@ -9,7 +9,7 @@ use warnings;
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = '0.10_01';
+$VERSION = '0.10_02';
 
 UNITCHECK {
 sub _running_under_docreader {
