@@ -9,7 +9,7 @@ use warnings;
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = '0.10_02';
+$VERSION = '0.11';
 
 UNITCHECK {
 sub _running_under_docreader {
@@ -168,7 +168,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2012-2013, brian d foy, All Rights Reserved.
+Copyright (c) 2012-2014, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

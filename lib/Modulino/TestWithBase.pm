@@ -5,7 +5,7 @@ use warnings;
 
 use v5.10.1;
 
-our $VERSION = '0.10_01';
+our $VERSION = '0.11';
 
 require Modulino::Base;
 
@@ -84,7 +84,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2013, brian d foy, All Rights Reserved.
+Copyright (c) 2013-2014, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

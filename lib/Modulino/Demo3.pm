@@ -11,7 +11,7 @@ use vars qw($VERSION);
 
 require Modulino::Base;
 
-$VERSION = '0.10_01';
+$VERSION = '0.11';
 
 =encoding utf8
 
@@ -144,7 +144,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2012-2013, brian d foy, All Rights Reserved.
+Copyright (c) 2012-2014, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 
