@@ -2,6 +2,9 @@
 	* First release of a module to demonstrate various Modulino
 	concepts.
 
+0.11 - Fri Jan  3 13:37:23 2014
+	* Get rid of MYMETA
+
 0.10_02 - Thu Aug 22 11:55:44 2013
 	* Fix distro for CPAN Testers
 
