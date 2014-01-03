@@ -11,7 +11,7 @@ use vars qw($VERSION);
 
 require Modulino::Base;
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 =encoding utf8
 

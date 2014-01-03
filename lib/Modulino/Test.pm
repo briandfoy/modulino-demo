@@ -9,7 +9,7 @@ use warnings;
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 UNITCHECK {
 sub _running_under_tester {

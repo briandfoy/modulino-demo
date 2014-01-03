@@ -4,7 +4,6 @@ lib/Modulino/Base.pm
 lib/Modulino/Demo.pm
 lib/Modulino/Demo2.pm
 lib/Modulino/Demo3.pm
-lib/Modulino/jeffrey_answers.txt
 lib/Modulino/Test.pm
 lib/Modulino/TestWithBase.pm
 LICENSE
