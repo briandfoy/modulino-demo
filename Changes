@@ -2,6 +2,9 @@
 	* First release of a module to demonstrate various Modulino
 	concepts.
 
+0.12 - Fri Jan  3 13:40:11 2014
+	* MANIFEST fix. Oops.
+
 0.11 - Fri Jan  3 13:37:23 2014
 	* Get rid of MYMETA
 
