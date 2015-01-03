@@ -33,11 +33,13 @@ __PACKAGE__->$method(@ARGV) if defined $method;
 
 =head1 NAME
 
-__PACKAGE__ - A demonstration of module ideas
+Modulino::Test - A demonstration of module ideas
 
 =head1 SYNOPSIS
 
-	use __PACKAGE__;
+This module isn't meant for use. It's an example of the modulino idea
+with an additional branch to recognize test situations then run as a
+test file.
 
 =head1 DESCRIPTION
 
