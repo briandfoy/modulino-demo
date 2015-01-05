@@ -1,6 +1,4 @@
-0.10_01 - Sat Jul 21 10:06:48 2012
-	* First release of a module to demonstrate various Modulino
-	concepts.
+# Changes to Modulino::Demo
 
 0.12 - Fri Jan  3 13:40:11 2014
 	* MANIFEST fix. Oops.
