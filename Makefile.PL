@@ -1,10 +1,12 @@
 require 5.014;
+
+package Modulino::Demo;
 use strict;
 use warnings;
 
 use File::Spec::Functions qw(catfile);
 
-my $module    = 'Modulino::Demo';
+my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
 my $github    = 'https://github.com/briandfoy/Modulino-Demo';
