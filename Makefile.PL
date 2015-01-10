@@ -51,7 +51,7 @@ my %WriteMakefile = (
 			},
 		},
 	
-	clean  => { FILES    => q|Modulino-Demo-*| },
+	clean => { FILES => "$dist-*" },
 	);
 
 sub arguments { \%WriteMakefile }
