@@ -38,7 +38,7 @@ __PACKAGE__->$method(@ARGV) if defined $method;
 
 =head1 NAME
 
-Modulino::Demo - A demonstration of modulino ideas
+Modulino::Demo2 - A demonstration of modulino ideas
 
 =head1 SYNOPSIS
 

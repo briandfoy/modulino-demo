@@ -10,6 +10,16 @@ use Carp;
 
 our $VERSION = '0.12';
 
+=encoding utf8
+
+=head1 NAME
+
+Modulino::Base - Common stuff for the modulino demonstrations
+
+=head1 SYNOPSIS
+
+=cut
+
 sub _running_under_tester { !! $ENV{CPANTEST} }
 
 sub _running_as_app {

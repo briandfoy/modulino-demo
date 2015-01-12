@@ -17,7 +17,7 @@ $VERSION = '0.12';
 
 =head1 NAME
 
-Modulino::Demo - A demonstration of modulino ideas
+Modulino::Demo3 - A demonstration of modulino ideas
 
 =head1 SYNOPSIS
 
