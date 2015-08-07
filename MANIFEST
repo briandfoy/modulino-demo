@@ -1,5 +1,6 @@
 Changes
 examples/placeholder.pl
+INSTALL.SKIP
 lib/Modulino/Base.pm
 lib/Modulino/Demo.pm
 lib/Modulino/Demo2.pm
