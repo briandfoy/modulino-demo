@@ -61,10 +61,13 @@ my %WriteMakefile = (
 		},
 
 	'TEST_REQUIRES' => {
-		'Test::More' => '0.94',
+		'Test::More' => '1',
 		},
 
 	'PREREQ_PM'     => {
+		'Pod::Perldoc'        => '0',
+		'Test::Pod'           => '0',
+		'Test::Pod::Coverage' => '0',
 		},
 
 	'META_MERGE' => {
