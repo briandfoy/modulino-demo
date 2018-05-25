@@ -6,12 +6,9 @@ use v5.14.2;
 
 use warnings;
 
-use subs qw();
-use vars qw($VERSION);
-
 require Modulino::Base;
 
-$VERSION = '0.12';
+our $VERSION = '0.121';
 
 =encoding utf8
 

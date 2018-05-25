@@ -6,10 +6,7 @@ use v5.14.2;
 
 use warnings;
 
-use subs qw();
-use vars qw($VERSION);
-
-$VERSION = '0.12';
+our $VERSION = '0.121';
 
 UNITCHECK {
 sub _running_under_tester {

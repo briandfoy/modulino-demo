@@ -5,7 +5,7 @@ use warnings;
 
 use v5.10.1;
 
-our $VERSION = '0.12';
+our $VERSION = '0.121';
 
 require Modulino::Base;
 

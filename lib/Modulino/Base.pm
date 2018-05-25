@@ -5,10 +5,9 @@ no warnings;
 
 use v5.10.1;
 
-use vars qw($VERSION);
 use Carp;
 
-our $VERSION = '0.12';
+our $VERSION = '0.121';
 
 =encoding utf8
 
