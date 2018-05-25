@@ -1,5 +1,8 @@
 Revision history for Perl module Modulino::Demo
 
+0.121 2018-05-25T14:35:44Z
+	* Update to Artistic License 2.0.
+
 0.12 - 2014-01-03
 	* MANIFEST fix. Oops.
 
