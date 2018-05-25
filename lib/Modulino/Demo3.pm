@@ -133,7 +133,7 @@ sub _test_doc {
 
 This source is in Github:
 
-	http://github.com/briandfoy/modulino-demo/
+	https://github.com/briandfoy/modulino-demo/
 
 =head1 AUTHOR
 
