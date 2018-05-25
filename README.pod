@@ -62,16 +62,16 @@ the source repository:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/Modulino-Demo>
+=item *	L<https://github.com/briandfoy/modulino-demo>
 
 =back
 
 If you find a problem, file a ticket in the L<issue
-tracker|https://github.com/briandfoy/Modulino-Demo/issues>:
+tracker|https://github.com/briandfoy/modulino-demo/issues>:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/Modulino-Demo/issues>
+=item *	L<https://github.com/briandfoy/modulino-demo/issues>
 
 =back
 
