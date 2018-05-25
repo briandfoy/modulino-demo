@@ -1,5 +1,8 @@
 Revision history for Perl module Modulino::Demo
 
+0.122 2018-05-25T16:02:01Z
+	* Update PREREQ_PM for the modules the code uses
+
 0.121 2018-05-25T14:35:44Z
 	* Update to Artistic License 2.0.
 
