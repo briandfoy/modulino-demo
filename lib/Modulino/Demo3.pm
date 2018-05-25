@@ -8,7 +8,7 @@ use warnings;
 
 require Modulino::Base;
 
-our $VERSION = '0.121';
+our $VERSION = '0.122';
 
 =encoding utf8
 

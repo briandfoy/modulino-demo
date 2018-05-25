@@ -6,7 +6,7 @@ use v5.14.2;
 
 use warnings;
 
-our $VERSION = '0.121';
+our $VERSION = '0.122';
 
 UNITCHECK {
 sub _running_under_tester {

@@ -7,7 +7,7 @@ use v5.10.1;
 
 use Carp;
 
-our $VERSION = '0.121';
+our $VERSION = '0.122';
 
 =encoding utf8
 
