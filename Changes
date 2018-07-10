@@ -1,5 +1,9 @@
 Revision history for Perl module Modulino::Demo
 
+1.002 2018-07-10T18:12:03Z
+	* Update version to one later than on CPAN (had a couple different
+	repos going).
+
 0.122 2018-05-25T16:02:01Z
 	* Update PREREQ_PM for the modules the code uses
 
