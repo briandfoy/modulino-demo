@@ -67,6 +67,7 @@ sub _test_run {
 Run all of the subroutines that start with C<_test_>. Each subroutine
 is wrapped in a C<Test::More> subtest.
 
+=back
 
 =head1 TO DO
 
