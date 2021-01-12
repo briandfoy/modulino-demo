@@ -63,3 +63,6 @@
 \.releaserc
 \.lwpcookies
 Modulino-.*
+\bMANIFEST\s\d
+\bChanges\s\d
+
