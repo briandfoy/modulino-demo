@@ -32,7 +32,8 @@ inc/
 nytprof.out
 pm_to_blib
 podman*
-*.icould
+*.icloud
+
 MANIFEST*[123456789]
 Changes*[123456789]
 
