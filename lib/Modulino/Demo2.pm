@@ -6,7 +6,7 @@ use v5.14.2;
 
 use warnings;
 
-our $VERSION = '1.002';
+our $VERSION = '1.003';
 
 UNITCHECK {
 sub _running_under_docreader {
