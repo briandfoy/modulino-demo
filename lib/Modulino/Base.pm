@@ -1,9 +1,10 @@
+use v5.14;
+
 package Modulino::Base;
 use utf8;
 use strict;
 no warnings;
 
-use v5.10.1;
 
 use Carp;
 

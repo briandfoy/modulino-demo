@@ -1,9 +1,9 @@
+use v5.14;
+
 package Modulino::TestWithBase;
 use utf8;
 use strict;
 use warnings;
-
-use v5.10.1;
 
 our $VERSION = '1.003';
 

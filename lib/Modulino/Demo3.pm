@@ -1,8 +1,8 @@
+use v5.14;
+
 package Modulino::Demo3;
 use strict;
 use utf8;
-
-use v5.14.2;
 
 use warnings;
 
