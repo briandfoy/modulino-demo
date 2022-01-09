@@ -6,7 +6,7 @@ use utf8;
 
 use warnings;
 
-our $VERSION = '1.003';
+our $VERSION = '1.004';
 
 UNITCHECK {
 sub _running_under_docreader {
