@@ -142,7 +142,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright © 2013-2022, brian d foy <bdfoy@cpan.org>. All rights reserved.
+Copyright © 2013-2023, brian d foy <bdfoy@cpan.org>. All rights reserved.
 
 You may redistribute this under the terms of the Artistic License 2.0.
 
